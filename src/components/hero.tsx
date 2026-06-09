@@ -4,7 +4,7 @@ export function Hero() {
   return (
     <div className="grid flex-1 items-center gap-12 py-20 lg:grid-cols-[1.2fr_0.8fr]">
       <section>
-        <p className="mb-4 text-sm font-medium uppercase tracking-[0.3em] text-cyan-300">
+        <p className="mb-4 text-sm font-medium uppercase tracking-[0.3em] text-slate-400">
           Full Stack Developer
         </p>
 
@@ -21,22 +21,22 @@ export function Hero() {
         <div className="mt-8 flex flex-col gap-4 sm:flex-row">
           <a
             href="#projects"
-            className="rounded-full bg-cyan-400 px-6 py-3 text-center text-sm font-semibold text-slate-950 shadow-lg shadow-cyan-400/20 transition hover:bg-cyan-300"
+            className="rounded-full bg-white px-6 py-3 text-center text-sm font-semibold text-slate-950 shadow-lg shadow-white/10 transition hover:bg-slate-200"
           >
             Ver proyectos
           </a>
 
           <a
             href="#contact"
-            className="rounded-full border border-slate-700 px-6 py-3 text-center text-sm font-semibold text-slate-100 transition hover:border-cyan-300 hover:text-cyan-300"
+            className="rounded-full border border-white/15 px-6 py-3 text-center text-sm font-semibold text-slate-100 transition hover:border-white hover:text-white"
           >
             Contactarme
           </a>
         </div>
       </section>
 
-      <aside className="rounded-3xl border border-cyan-400/20 bg-slate-900/70 p-6 shadow-2xl shadow-cyan-500/10">
-        <p className="text-sm text-slate-400">Perfil principal</p>
+      <aside className="rounded-3xl border border-white/10 bg-white/[0.03] p-6 shadow-2xl shadow-black/40 backdrop-blur">
+        <p className="text-sm text-slate-500">Perfil principal</p>
 
         <h2 className="mt-3 text-2xl font-semibold text-white">
           Full Stack Developer
@@ -52,7 +52,7 @@ export function Hero() {
           {technologies.map((technology) => (
             <span
               key={technology}
-              className="rounded-full border border-slate-700 bg-slate-800 px-3 py-1 text-sm text-slate-300"
+              className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1 text-sm text-slate-300"
             >
               {technology}
             </span>

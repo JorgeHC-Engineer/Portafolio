@@ -1,8 +1,8 @@
 export function Contact() {
   return (
-    <section id="contact" className="border-t border-slate-800 px-6 py-24">
+    <section id="contact" className="border-t border-white/10 px-6 py-24">
       <div className="mx-auto max-w-6xl">
-        <p className="text-sm font-medium uppercase tracking-[0.3em] text-cyan-300">
+        <p className="text-sm font-medium uppercase tracking-[0.3em] text-slate-400">
           Contacto
         </p>
 

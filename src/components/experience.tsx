@@ -4,7 +4,7 @@ export function Experience() {
   return (
     <section id="experience" className="px-6 py-24">
       <div className="mx-auto max-w-6xl">
-        <p className="text-sm font-medium uppercase tracking-[0.3em] text-cyan-300">
+        <p className="text-sm font-medium uppercase tracking-[0.3em] text-slate-400">
           Experiencia
         </p>
 
@@ -16,7 +16,7 @@ export function Experience() {
           {experienceAreas.map((area) => (
             <article
               key={area.title}
-              className="rounded-3xl border border-slate-800 bg-slate-900 p-6 transition hover:border-cyan-400/60 hover:shadow-xl hover:shadow-cyan-500/10"
+              className="rounded-3xl border border-white/10 bg-white/[0.03] p-6 transition hover:border-white/25 hover:bg-white/[0.05] hover:shadow-xl hover:shadow-black/30"
             >
               <h3 className="text-xl font-semibold text-white">{area.title}</h3>
 

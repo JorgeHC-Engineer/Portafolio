@@ -19,12 +19,18 @@ const navLinks = [
 
 export function Navbar() {
   return (
-    <nav className="flex items-center justify-between border-b border-slate-800 pb-6">
-      <p className="text-lg font-semibold tracking-tight">Jorge Hernández</p>
+    <nav className="sticky top-4 z-50 flex items-center justify-between rounded-full border border-white/10 bg-neutral-950/70 px-5 py-4 shadow-2xl shadow-black/30 backdrop-blur">
+      <p className="text-sm font-semibold tracking-tight text-white md:text-base">
+        Jorge Hernández
+      </p>
 
-      <div className="hidden gap-6 text-sm text-slate-300 md:flex">
+      <div className="hidden gap-6 text-sm text-slate-400 md:flex">
         {navLinks.map((link) => (
-          <a key={link.href} href={link.href} className="hover:text-cyan-300">
+          <a
+            key={link.href}
+            href={link.href}
+            className="transition hover:text-white"
+          >
             {link.label}
           </a>
         ))}

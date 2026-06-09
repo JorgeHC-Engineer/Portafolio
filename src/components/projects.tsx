@@ -2,9 +2,9 @@ import { projects } from "@/data/portfolio-data";
 
 export function Projects() {
   return (
-    <section id="projects" className="border-t border-slate-800 px-6 py-24">
+    <section id="projects" className="border-t border-white/10 px-6 py-24">
       <div className="mx-auto max-w-6xl">
-        <p className="text-sm font-medium uppercase tracking-[0.3em] text-cyan-300">
+        <p className="text-sm font-medium uppercase tracking-[0.3em] text-slate-400">
           Proyectos
         </p>
 
@@ -16,7 +16,7 @@ export function Projects() {
           {projects.map((project) => (
             <article
               key={project.title}
-              className="rounded-3xl border border-slate-800 bg-slate-900 p-6 transition hover:border-cyan-400/60 hover:shadow-xl hover:shadow-cyan-500/10"
+              className="rounded-3xl border border-white/10 bg-white/[0.03] p-6 transition hover:border-white/25 hover:bg-white/[0.05] hover:shadow-xl hover:shadow-black/30"
             >
               <h3 className="text-2xl font-semibold text-white">
                 {project.title}
@@ -30,7 +30,7 @@ export function Projects() {
                 {project.technologies.map((technology) => (
                   <span
                     key={technology}
-                    className="rounded-full bg-cyan-400/10 px-3 py-1 text-sm text-cyan-300"
+                    className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1 text-sm text-slate-300"
                   >
                     {technology}
                   </span>
